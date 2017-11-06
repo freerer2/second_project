@@ -14,7 +14,7 @@
 <title>Freelancer - Start Bootstrap Theme</title>
 
 
-    <style>
+       <style>
 
         *{box-sizing: border-box; -webkit-box-sizing: border-box; }
         html, body { height: 100%; }
@@ -25,11 +25,13 @@
         http://stackoverflow.com/a/34696029/383904
         */
 
+
         .CSSgal {
             position: relative;
             overflow: hidden;
-            height: 100%; /* Or set a fixed height */
+            height: 100%; !* Or set a fixed height *!
         }
+
 
         /* SLIDER */
 
@@ -62,6 +64,7 @@
             width: 100%;
             height: 0;
         }
+        s {position: fixed; bottom:0}
 
         .CSSgal .prevNext > div+div {
             visibility: hidden; /* Hide all but first P/N container */
@@ -168,7 +171,8 @@
             color: rgba(0,0,0,0.8);
             text-decoration: none;
         }
-    </style>
+
+   	 </style>
     
     <!-- 슬라이드 CSS 종료-->
     
@@ -250,10 +254,13 @@
 	<header class="masthead">
 	<div class="container">
 	
-		<div class="CSSgal">
 
 
     <!-- 슬라이드 시작 -->
+		<div class="CSSgal">
+
+
+    <!-- Don't wrap targets in parent -->
     <s id="s1"></s>
     <s id="s2"></s>
     <s id="s3"></s>
@@ -288,7 +295,6 @@
         <a href="#s3">3</a>
         <a href="#s4">4</a>
     </div>
-	</div>
 	
 	
 	<!-- 슬라이드 시작 끝 -->
