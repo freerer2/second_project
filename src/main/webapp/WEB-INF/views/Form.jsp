@@ -192,44 +192,14 @@
 
   </head>
 
-   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">글쓰기</button>
+   
 
-<!-- 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="control-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="control-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">작성하기</button>
-      </div>
-    </div>
-  </div>
-</div>
-  댓글달때-->
- 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
       <div class="container">
         <h2 class="text-center">Portfolio</h2>
         <hr class="star-primary">
         <div class="row">
-
           <div class="col-sm-4 portfolio-item">
             <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
               <div class="caption">
@@ -294,14 +264,6 @@
       </div>
     </div>
 
-<body>
-    <div id="summernote">간단하게 확인해 보아요!</div>
-    <button type="button" onclick="showContent();">작성</button>
-    <div class="output"></div>
-</body>
-
-
-
     <!-- Bootstrap core JavaScript -->
     <script src="../../resources/tempelete/vendor/jquery/jquery.min.js"></script>
     <script src="../../resources/tempelete/vendor/popper/popper.min.js"></script>
@@ -309,17 +271,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../resources/tempelete/vendor/jquery-easing/jquery.easing.min.js"></script>
-    
-    
-    <!-- include libraries(jQuery, bootstrap) -->
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
-<!-- include summernote css/js-->
-<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
-    
-    
+
     <!-- Contact Form JavaScript -->
     <script src="../../resources/tempelete/js/jqBootstrapValidation.js"></script>
     <script src="../../resources/tempelete/js/contact_me.js"></script>
@@ -328,33 +280,5 @@
     <script src="../../resources/tempelete/js/freelancer.min.js"></script>
 
   </body>
-  
-  
-<script>
-/*   ----------글쓰기 에디터 (썸머노트)-------------- */
-$(document).ready(function() {
-	  $('#summernote').summernote();
-	});
-$('#summernote').summernote({
-	  height: 300,                 // set editor height
-	  minHeight: null,             // set minimum height of editor
-	  maxHeight: null,             // set maximum height of editor
-	  focus: true                  // set focus to editable area after initializing summernote
-	});
-$('#summernote').summernote({
-	  toolbar: [
-	    // [groupName, [list of button]]
-	    ['style', ['bold', 'italic', 'underline', 'clear']],
-	    ['font', ['strikethrough', 'superscript', 'subscript']],
-	    ['fontsize', ['fontsize']],
-	    ['color', ['color']],
-	    ['para', ['ul', 'ol', 'paragraph']],
-	    ['height', ['height']]
-	  ]
-	});
-function showContent() {
-    $('.output').html($('#summernote').summernote('code'));
-}
 
-</script>
 </html>
